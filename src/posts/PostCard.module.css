@@ -1,0 +1,52 @@
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: #e94560;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.authorLink {
+  color: #e94560;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.authorLink:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.75rem;
+}
+
+.excerpt {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}

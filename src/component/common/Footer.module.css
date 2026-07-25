@@ -1,0 +1,31 @@
+.footer {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #ccc;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e94560;
+}
+
+.tagline {
+  font-style: italic;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.copy {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
