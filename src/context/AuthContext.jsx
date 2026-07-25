@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 import { onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase/config';
-import { createUserProfile } from '../services/userService'; // ← tambahin
+import { createUserProfile } from '../services/userService';
 
 export const AuthContext = createContext(null);
 
@@ -13,7 +13,6 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
-        // Simpan/buat profil user di Firestore
         await createUserProfile(firebaseUser);
       }
       setUser(firebaseUser);
