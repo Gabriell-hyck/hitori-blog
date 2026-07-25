@@ -19,12 +19,4 @@ export default defineConfig({
       },
     },
   },
-  resolve: {
-    alias: {
-      'firebase': 'firebase/app',
-    },
-  },
-  optimizeDeps: {
-    include: ['firebase/app', 'firebase/auth', 'firebase/firestore'],
-  },
 })
